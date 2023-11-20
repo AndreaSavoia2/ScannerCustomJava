@@ -27,14 +27,14 @@ public class MioScanner {
         return risposta;
     }
 
-    public int LeggiInt(String domanda){
+    public int leggiInt(String domanda){
         System.out.println(domanda);
         int intero = tastiera.nextInt();
         tastiera.nextLine();
         return intero;
     }
 
-    public int LeggiIntSeVero(String domanda){
+    public int leggiIntSeVero(String domanda){
         System.out.println(domanda);
         while(!tastiera.hasNextInt()){
             System.out.println("Inserisci un numero intero valido");
@@ -46,14 +46,14 @@ public class MioScanner {
         return intero;
     }
 
-    public double LeggiDouble(String domanda){
+    public double leggiDouble(String domanda){
         System.out.println(domanda);
         double doppio = tastiera.nextDouble();
         tastiera.nextLine();
         return doppio;
     }
 
-    public double LeggiDoubleSeVero(String domanda){
+    public double leggiDoubleSeVero(String domanda){
         System.out.println(domanda);
         while(!tastiera.hasNextDouble()){
             System.out.println("Inserisci un numero decimale valido");
